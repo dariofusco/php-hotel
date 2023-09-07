@@ -56,8 +56,33 @@ $hotels = [
 
     <div class="container py-2">
         <h1 class="text-success py-2">Php Hotel</h1>
+
+        <form class="py-4">
+            <fieldset>
+                <div class="mb-3">
+                    <label for="parkingSelect" class="form-label">Parking</label>
+                    <select id="parkingSelect" class="form-select">
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="voteSelect" class="form-label">Vote</label>
+                    <select id="voteSelect" class="form-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Filtra</button>
+            </fieldset>
+        </form>
+
         <div class="row">
-            <div class="col">
+            <div class="col py-4">
+
                 <table class="table">
                     <thead>
                         <tr>
@@ -84,6 +109,7 @@ $hotels = [
                         ?>
                     </tbody>
                 </table>
+
             </div>
         </div>
     </div>
