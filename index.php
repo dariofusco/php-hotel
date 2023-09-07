@@ -40,6 +40,9 @@ $hotels = [
 
 ];
 
+$parkingSelect = $_GET['parkingSelect'];
+$voteSelect = $_GET['voteSelect'];
+
 ?>
 
 <!DOCTYPE html>
@@ -61,14 +64,14 @@ $hotels = [
             <fieldset>
                 <div class="mb-3">
                     <label for="parkingSelect" class="form-label">Parking</label>
-                    <select id="parkingSelect" class="form-select">
-                        <option>Yes</option>
-                        <option>No</option>
+                    <select name="parkingSelect" id="parkingSelect" class="form-select">
+                        <option>yes</option>
+                        <option>no</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="voteSelect" class="form-label">Vote</label>
-                    <select id="voteSelect" class="form-select">
+                    <select name="voteSelect" id="voteSelect" class="form-select">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
